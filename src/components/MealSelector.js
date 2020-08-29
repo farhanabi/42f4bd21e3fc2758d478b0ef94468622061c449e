@@ -17,12 +17,13 @@ const Button = styled.button`
   display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 66%;
+	height: 70%;
 	width: 46%;
-	font-size: 12px;
+	font-size: 14px;
+	font-weight: 500;
 	border: 1px solid #f1f1f2;
 	background: transparent;	
-	// color: #f1f1f2;
+	color: #6e7679;
 	cursor: pointer;
 
 	${props => props.left && css`

@@ -50,23 +50,24 @@ const Button = styled.button`
 `;
 
 const DayBox = styled.p`
-	display: grid;
+	display: flex;
 	max-width: 375px;
 	background-color: white;
-	justify-items: center;
+	justify-content: center;
 	margin: 0 auto;
 	width: 100%;
-	font-size: 7px;
+	font-size: 8px;
 `;
 
 const DateBox = styled.p`
-	display: grid;
+	display: flex;
 	max-width: 375px;
 	background-color: white;
-	justify-items: center;
+	justify-content: center;
 	margin: 0 auto;
 	width: 100%;
-	font-size: 12px;
+	font-size: 14px;
+	font-weight: 600;
 `;
 
 const Dates = [

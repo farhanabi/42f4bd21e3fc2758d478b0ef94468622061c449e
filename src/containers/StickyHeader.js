@@ -12,7 +12,6 @@ const Container = styled.div`
   max-width: 375px;
   background-color: white;
   align-items: center;
-  // box-shadow: 0px 8px 10px 0px rgba(10,31,68,0.1);
   width: 100%;
   overflow-y: scroll;
 `;

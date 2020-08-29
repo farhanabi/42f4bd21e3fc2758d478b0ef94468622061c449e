@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import styled, {css} from 'styled-components'
+import React from 'react';
+import styled from 'styled-components'
 
 const Container = styled.div`
   display: flex;
@@ -20,10 +20,10 @@ const CartButton = styled.button`
 	justify-content: space-between;
 	background-color: #a23530;
 	color: white;
-	width: 93%;
+	width: 94%;
 	height: 50px;
 	border: none;
-	border-radius: 8px;
+	border-radius: 6px;
 	font-size: 14px;
 	cursor: pointer;
 	margin-bottom: 16px;
@@ -57,12 +57,6 @@ const Icon = styled.svg`
 `
 
 function Cart() {
-	const [meal, setMeal] = useState('Lunch');
-
-	function toggleMeal(v) {
-		if (meal !== v) setMeal(v);
-	}
-
   return (
     <Container>
 			<CartButton>

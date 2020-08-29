@@ -5,17 +5,26 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 375px;
-  background-color: white;
-	align-items: center;
-	justify-content: center;
   width: 100%;
 `;
 
+const FoodListContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+	width: 100%;
+	padding-top: 16px;
+  background-color: white;
+	align-items: center;
+	justify-content: center;
+`;
+
 const ListDate = styled.h1`
-	font-size: 14px;
+	font-size: 16px;
+	font-weight: 600;
 	color: #424749;
 	background: transparent;
-	margin: 8px auto 8px 20px;
+	margin: 8px auto 16px 16px;
+	letter-spacing: 0.03em;
 `;
 
 const Card = styled.div`
@@ -23,20 +32,20 @@ const Card = styled.div`
   flex-direction: column;
 	justify-content: flex-start;
 	height: 400px;
-	width: 90%;
-	max-width: 340px;
+	width: 92%;
+	max-width: 345px;
 	font-size: 12px;
 	background: transparent;	
   box-shadow: 0px 8px 10px 0px rgba(10,31,68,0.1);
-	margin: 8px 0;
+	margin-bottom: 24px;
 	border-radius: 10px;
 	overflow: hidden;
 `;
 
 const CardImage = styled.img`
-	height: 64%;
+	height: 66%;
 	width: auto;
-	max-width: 340px;
+	max-width: 345px;
 	background: transparent;
 `;
 
@@ -44,10 +53,11 @@ const CardTextBox = styled.div`
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
-	height: 36%;
+	height: 34%;
 	width: 90%;
 	max-width: 340px;
-	padding: 16px;
+	padding: 8px 16px;
+	letter-spacing: 0.03em;
 
 	.rating {
 		display: flex;
@@ -59,25 +69,27 @@ const CardTextBox = styled.div`
 
 	.title {
 		margin: 4px 0;
-		font-size: 14px;
+		font-size: 16px;
+		font-weight: 600;
 		color: #424749;
 	}
 	
 	.subtitle {
-		margin: 4px 0;
+		margin: 0;
 		font-size: 12px;
 		font-weight: 500;
 		color: #6e7679;
 	}
 
 	.price-container {
+		margin-top: 16px;
 		display: flex;
 		width: 100%;
 		align-items: center;
 		justify-content: space-between;
 		flex-direction: row;
-		font-size: 14px;
-		font-weight: 700;
+		font-size: 16px;
+		font-weight: 600;
 		color: #424749;
 	}
 `;
@@ -103,29 +115,35 @@ const AddButton = styled.button`
 	width: 95px;
 	height: 35px;
 	border: none;
-	border-radius: 7px;
+	border-radius: 6px;
 	font-size: 14px;
 	cursor: pointer;
 `;
 
 const img1 = require("../assets/images/menu-1-roasted-chicken.png");
 const img2 = require("../assets/images/menu-2-roasted-chicken.png");
+const img3 = require("../assets/images/menu-3-roasted-chicken.png");
+const img4 = require("../assets/images/menu-4-roasted-chicken.png");
+const img5 = require("../assets/images/menu-5-roasted-chicken.png");
+const img6 = require("../assets/images/menu-6-roasted-chicken.png");
 
 const Data = [
-	{
+	{	
+		"id": 0,
 		"date": "Kamis. 13 Maret 2019",
 		"foodCard": [
-			{"img":img1},
-			{"img":img2},
-			{"img":img2}
+			{"id":0,"img":img1},
+			{"id":1,"img":img2},
+			{"id":2,"img":img3}
 		]
 	},
 	{
+		"id": 1,
 		"date": "Jumat. 14 Maret 2019",
 		"foodCard": [
-			{"img":img1},
-			{"img":img2},
-			{"img":img2}
+			{"id":3,"img":img4},
+			{"id":4,"img":img5},
+			{"id":5,"img":img6}
 		]
 	}
 ]
@@ -134,7 +152,7 @@ function FoodList({setCartActive}) {
 	function FoodCard({img}) {
 		return (
 			<Card>
-				<CardImage src={img}/>
+				<CardImage src={img} alt=""/>
 				<CardTextBox>
 					<div className="rating">
 						4.5
@@ -161,10 +179,10 @@ function FoodList({setCartActive}) {
   return (
 		<Container>
 			{Data.map(d => (
-				<Container>
+				<FoodListContainer key={d.id}>
 					<ListDate>{d.date}</ListDate>
-					{d.foodCard.map(f => <FoodCard img={f.img}/>)}
-				</Container>
+					{d.foodCard.map(f => <FoodCard key={f.id} img={f.img}/>)}
+				</FoodListContainer>
 			))}
 		</Container>
   );

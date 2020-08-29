@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
 import styled from 'styled-components'
+
 import StickyHeader from './containers/StickyHeader'
+import { useScrollPosition } from "./components/hooks/useScrollPosition";
 import Location from './components/Location'
 import MealSelector from './components/MealSelector'
 import FoodList from './components/FoodList'
@@ -23,11 +25,21 @@ function App() {
 	const [isCartActive, setCartActive] = useState(false);
 	const [isModalShow, setModalShow] = useState(false);
 
+  const [sticky, setSticky] = useState(false);
+
+	useScrollPosition(
+    ({ prevPos, currPos }) => {
+      const isShow = currPos.y > prevPos.y
+      if (isShow !== sticky) setSticky(isShow)
+    },
+    [sticky]
+  )
+
   return (
     <Container>
       {isModalShow && <Location showModal={setModalShow}/>}
       <StickyHeader showModal={setModalShow}/>
-      <MealSelector/>
+      <MealSelector sticky={sticky}/>
       <FoodList setCartActive={setCartActive}/>
       {isCartActive && <Cart/>}
     </Container>
