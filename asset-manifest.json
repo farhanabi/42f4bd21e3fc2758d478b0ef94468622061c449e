@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/42f4bd21e3fc2758d478b0ef94468622061c449e/static/css/main.309da817.chunk.css",
+    "main.js": "/42f4bd21e3fc2758d478b0ef94468622061c449e/static/js/main.742640f8.chunk.js",
+    "main.js.map": "/42f4bd21e3fc2758d478b0ef94468622061c449e/static/js/main.742640f8.chunk.js.map",
+    "runtime-main.js": "/42f4bd21e3fc2758d478b0ef94468622061c449e/static/js/runtime-main.4e96d0f2.js",
+    "runtime-main.js.map": "/42f4bd21e3fc2758d478b0ef94468622061c449e/static/js/runtime-main.4e96d0f2.js.map",
+    "static/js/2.349f6de5.chunk.js": "/42f4bd21e3fc2758d478b0ef94468622061c449e/static/js/2.349f6de5.chunk.js",
+    "static/js/2.349f6de5.chunk.js.map": "/42f4bd21e3fc2758d478b0ef94468622061c449e/static/js/2.349f6de5.chunk.js.map",
+    "index.html": "/42f4bd21e3fc2758d478b0ef94468622061c449e/index.html",
+    "precache-manifest.d410bfc0efc7bc590747fd94c8b5b801.js": "/42f4bd21e3fc2758d478b0ef94468622061c449e/precache-manifest.d410bfc0efc7bc590747fd94c8b5b801.js",
+    "service-worker.js": "/42f4bd21e3fc2758d478b0ef94468622061c449e/service-worker.js",
+    "static/css/main.309da817.chunk.css.map": "/42f4bd21e3fc2758d478b0ef94468622061c449e/static/css/main.309da817.chunk.css.map",
+    "static/js/2.349f6de5.chunk.js.LICENSE.txt": "/42f4bd21e3fc2758d478b0ef94468622061c449e/static/js/2.349f6de5.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/42f4bd21e3fc2758d478b0ef94468622061c449e/static/media/Proxima Nova Semibold.6a386899.otf",
+    "static/media/google.png": "/42f4bd21e3fc2758d478b0ef94468622061c449e/static/media/google.bc09fdce.png",
+    "static/media/menu-1-roasted-chicken.png": "/42f4bd21e3fc2758d478b0ef94468622061c449e/static/media/menu-1-roasted-chicken.ece730d7.png",
+    "static/media/menu-2-roasted-chicken.png": "/42f4bd21e3fc2758d478b0ef94468622061c449e/static/media/menu-2-roasted-chicken.9563695c.png",
+    "static/media/menu-3-roasted-chicken.png": "/42f4bd21e3fc2758d478b0ef94468622061c449e/static/media/menu-3-roasted-chicken.377e46fe.png",
+    "static/media/menu-4-roasted-chicken.png": "/42f4bd21e3fc2758d478b0ef94468622061c449e/static/media/menu-4-roasted-chicken.902fc004.png",
+    "static/media/menu-5-roasted-chicken.png": "/42f4bd21e3fc2758d478b0ef94468622061c449e/static/media/menu-5-roasted-chicken.65f5de66.png",
+    "static/media/menu-6-roasted-chicken.png": "/42f4bd21e3fc2758d478b0ef94468622061c449e/static/media/menu-6-roasted-chicken.21981702.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4e96d0f2.js",
+    "static/js/2.349f6de5.chunk.js",
+    "static/css/main.309da817.chunk.css",
+    "static/js/main.742640f8.chunk.js"
+  ]
+}
