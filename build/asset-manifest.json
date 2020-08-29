@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.adeb9d33.chunk.css",
+    "main.js": "/static/js/main.b849fef8.chunk.js",
+    "main.js.map": "/static/js/main.b849fef8.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2ec3893e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2ec3893e.js.map",
+    "static/js/2.b79cc45d.chunk.js": "/static/js/2.b79cc45d.chunk.js",
+    "static/js/2.b79cc45d.chunk.js.map": "/static/js/2.b79cc45d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d693b00267cdb2da345e425d851e8792.js": "/precache-manifest.d693b00267cdb2da345e425d851e8792.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.adeb9d33.chunk.css.map": "/static/css/main.adeb9d33.chunk.css.map",
+    "static/js/2.b79cc45d.chunk.js.LICENSE.txt": "/static/js/2.b79cc45d.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Proxima Nova Semibold.6a386899.otf",
+    "static/media/google.png": "/static/media/google.bc09fdce.png",
+    "static/media/menu-1-roasted-chicken.png": "/static/media/menu-1-roasted-chicken.ece730d7.png",
+    "static/media/menu-2-roasted-chicken.png": "/static/media/menu-2-roasted-chicken.9563695c.png",
+    "static/media/menu-3-roasted-chicken.png": "/static/media/menu-3-roasted-chicken.377e46fe.png",
+    "static/media/menu-4-roasted-chicken.png": "/static/media/menu-4-roasted-chicken.902fc004.png",
+    "static/media/menu-5-roasted-chicken.png": "/static/media/menu-5-roasted-chicken.65f5de66.png",
+    "static/media/menu-6-roasted-chicken.png": "/static/media/menu-6-roasted-chicken.21981702.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ec3893e.js",
+    "static/js/2.b79cc45d.chunk.js",
+    "static/css/main.adeb9d33.chunk.css",
+    "static/js/main.b849fef8.chunk.js"
+  ]
+}
